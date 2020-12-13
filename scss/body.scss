@@ -152,7 +152,7 @@
 			.carousel-caption {
 				left: 5%;
 				right: 5%;
-			  top: 15%;
+			  top: 16%;
 			  padding: 0;
 			  margin-top: 30px;
 			  img{
@@ -182,8 +182,8 @@
 			  	cursor: pointer;
 			  	&:active{
 			  		background: #000;
-			  		opacity: 0.5;
-			  		color: #ff6600;
+			  		opacity: 0.7;
+			  		color: #fff;
 			  	}
 			  }
 			}
@@ -256,7 +256,7 @@ main{
 		.column_promo_1,.column_promo_2{
 			padding-right: 0px;
 			padding-left: 0px;
-			background-color: #f5651d;
+			background-color: #ff6600;
 			.column_promo_1_head{
 				position: absolute;
 				border-right: solid 5px #ffffff;
