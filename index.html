@@ -16,19 +16,21 @@
 
 <header class="navigation">
 
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 
-			<div class="logo">
-					<a href="#"><img src="images/logo.png" alt=""></a>
+			<div class="container logo_l">
+				<div class="logo">
+						<a href="#"><img src="images/logo.png" alt=""></a>
+				</div>
 			</div>
 
-			<div class="col-lg-10 offset-2 top_bar">
+			<div class="col-lg-12 top_bar">
 				<div class="row">
-					<div class="col-lg-5">
+					<div class="col-lg-3 offset-3">
 						<span>international online sneaker and street wear shop</span>
 					</div>
-					<div class="col-lg-5 offset-2">
+					<div class="col-lg-4 offset-1 top_bn">
 						<nav>
 							<a href="#">Shipping Policy</a>
 							<a href="#">Find</a>
@@ -39,9 +41,9 @@
 				</div>
 			</div>
 
-			<div class="col-lg-10 offset-2 main_bar">
+			<div class="col-lg-12 main_bar">
 				<div class="row">
-					<div class="col-lg-8">
+					<div class="col-lg-6 offset-3">
 						<div class="row">
 							<nav class="main_nav">
 								<a href="#">New</a>
@@ -53,9 +55,12 @@
 							</nav>
 						</div>
 					</div>
-					<div class="col-lg-2 offset-2 main_search">
-						<a href="#"><i class="fas fa-search"></i></a>
-						<a href="#"><i class="fa fa-shopping-cart"></i></a>
+					<div class="col-lg-2 main_search">
+						<div class="search_box">
+							<input type="text" class="search_txt" name="" placeholder="Type to search">
+							<a class="search_btn" href="#"><i class="fas fa-search"></i></a>
+						</div>
+						<a class="basket_btn" href="#"><i class="fa fa-shopping-cart"></i></a>
 					</div>
 				</div>
 			</div>
@@ -74,7 +79,7 @@
 	    <div class="col-lg-12 head_slider_sl">
 	      <div class="sl_slide">
 	      	<div>
-	          <img src="images/adidas_bg.png">
+	          <img class="img_bg" src="images/adidas_bg.png">
 	          <div class="carousel-caption">
 	            <a href="#"><img src="images/adidas_logo.png" alt="#" class="brand_logo"></a>	
 							<h1>Adidas Triple Black Pack</h1>
@@ -83,7 +88,7 @@
 	          </div>
 	        </div>
 	        <div>
-	          <img src="images/nb_bg.png">
+	          <img class="img_bg" src="images/nb_bg.png">
 	          <div class="carousel-caption">
 	            <img src="images/nb_logo.png" alt="#" class="brand_logo">	
 							<h1>New Balance Triple Black Pack</h1>
@@ -92,7 +97,7 @@
 	          </div>
 	        </div>
 	        <div>
-	          <img src="images/nike_bg.png">
+	          <img class="img_bg" src="images/nike_bg.png">
 	          <div class="carousel-caption">
 	            <img src="images/nike_logo.png" alt="#" class="brand_logo">	
 							<h1>Nike Triple Black Pack</h1>
@@ -101,7 +106,7 @@
 	          </div>
 	        </div>
 	        <div>
-	          <img src="images/puma_bg.png">
+	          <img class="img_bg" src="images/puma_bg.png">
 	          <div class="carousel-caption">
 	            <img src="images/puma_logo.png" alt="#" class="brand_logo">	
 							<h1>Puma Triple Black Pack</h1>
@@ -110,7 +115,7 @@
 	          </div>
 	        </div>
 	        <div>
-	          <img src="images/new_era_bg.png">
+	          <img class="img_bg" src="images/new_era_bg.png">
 	          <div class="carousel-caption">
 	            <img src="images/new_era_logo.png" alt="#" class="brand_logo">	
 							<h1>New Era Cap Triple Black Pack</h1>
@@ -119,7 +124,7 @@
 	          </div>
 	        </div>
 	        <div>
-	          <img src="images/asics_bg.png">
+	          <img class="img_bg" src="images/asics_bg.png">
 	          <div class="carousel-caption">
 	            <img src="images/asics_logo.png" alt="#" class="brand_logo">	
 							<h1>Asics Triple Black Pack</h1>
@@ -137,6 +142,7 @@
 <main>
 
 	<section class="column_promo">
+
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 column_promo_1">
@@ -160,27 +166,35 @@
 				</div>
 			</div>
 		</div>
+
 	</section>
 
 	<section class="blog">
-			<div class="head_blog">
-				<h1>From the Blog</h1>
-				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</span>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="head_blog">
+							<h1>From the Blog</h1>
+							<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</span>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div class="container">	
 
 				<div class="row">
-					<div class="col-lg-6 img_blog"><img src="images/layer1.png" alt="#"></div>
-					<div class="col-lg-6 blog_big">
+					<div class="col-lg-6 col-sm-12 img_blog"><img src="images/layer1.png" alt="#"></div>
+					<div class="col-lg-6 col-sm-12 blog_big">
 						<div class="row">
-							<div class="col-lg-6 span_blog">
+							<div class="col-lg-6 col-sm-6 span_blog">
 								<span>Holy Shriiimp!  The Bible vol.1 </span>
 								<br><a href="#"><img src="images/arrow.png" alt="#"></a>
 							</div>
-							<div class="col-lg-6 img_blog"><a href="#"><img src="images/layer3.png" alt="#"></a></div>
-							<div class="col-lg-6 img_blog"><a href="#"><img src="images/layer2.png" alt="#"></a></div>
-							<div class="col-lg-6 span_blog">
+							<div class="col-lg-6 col-sm-6 img_blog"><a href="#"><img src="images/layer3.png" alt="#"></a></div>
+							<div class="col-lg-6 col-sm-6 img_blog"><a href="#"><img src="images/layer2.png" alt="#"></a></div>
+							<div class="col-lg-6 col-sm-6 span_blog">
 								<span>The Shelflife "Classic Dripper" is back </span>
 								<br><a href="#"><img src="images/arrow.png" alt="#"></a>
 							</div>
@@ -189,34 +203,34 @@
 				</div>
 
 				<div class="row">
-					<div class="col-lg-6 blog_big">
+					<div class="col-lg-6 col-sm-12 blog_big">
 						<div class="row">
-							<div class="col-lg-6 span_blog">
+							<div class="col-lg-6 col-sm-6 span_blog">
 								<span>Rubbing shouolders with Martha Cooper </span>
 								<br><a href="#"><img src="images/arrow.png" alt="#"></a>
 							</div>
-							<div class="col-lg-6 img_blog"><a href="#"><img src="images/layer8.png" alt="#"></a></div>
-							<div class="col-lg-6 img_blog"><a href="#"><img src="images/layer9.png" alt="#"></a></div>
-							<div class="col-lg-6 span_blog">
+							<div class="col-lg-6 col-sm-6 img_blog"><a href="#"><img src="images/layer8.png" alt="#"></a></div>
+							<div class="col-lg-6 col-sm-6 img_blog"><a href="#"><img src="images/layer9.png" alt="#"></a></div>
+							<div class="col-lg-6 col-sm-6 span_blog">
 								<span>Puma x BWGH August Releases </span>
 								<br><a href="#"><img src="images/arrow.png" alt="#"></a>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6 img_blog"><img src="images/layer6.png" alt="#"></div>	
+					<div class="col-lg-6 col-sm-12 img_blog"><img src="images/layer6.png" alt="#"></div>	
 				</div>
 
 				<div class="row">
-					<div class="col-lg-6 img_blog"><img src="images/layer129.png" alt="#"></div>
-					<div class="col-lg-6 blog_big">
+					<div class="col-lg-6 col-sm-12 img_blog"><img src="images/layer129.png" alt="#"></div>
+					<div class="col-lg-6 col-sm-12 blog_big">
 						<div class="row">
-							<div class="col-lg-6 span_blog">
+							<div class="col-lg-6 col-sm-6 span_blog">
 								<span>RIP Ekon 40HK Remembrance Park Jam </span>
 								<br><a href="#"><img src="images/arrow.png" alt="#"></a>
 							</div>
-							<div class="col-lg-6 img_blog"><a href="#"><img src="images/layer5.png" alt="#"></a></div>
-							<div class="col-lg-6 img_blog"><a href="#"><img src="images/layer2.png" alt="#"></a></div>
-							<div class="col-lg-6 span_blog">
+							<div class="col-lg-6 col-sm-6 img_blog"><a href="#"><img src="images/layer5.png" alt="#"></a></div>
+							<div class="col-lg-6 col-sm-6 img_blog"><a href="#"><img src="images/layer2.png" alt="#"></a></div>
+							<div class="col-lg-6 col-sm-6 span_blog">
 								<span>Adidas Original Stan Smith OG </span>
 								<br><a href="#"><img src="images/arrow.png" alt="#"></a>
 							</div>
@@ -225,28 +239,35 @@
 				</div>
 
 				<div class="row">
-					<div class="col-lg-6 blog_big">
+					<div class="col-lg-6 col-sm-12 blog_big">
 						<div class="row">
-							<div class="col-lg-6 span_blog">
+							<div class="col-lg-6 col-sm-6 span_blog">
 								<span>Rubbing shouolders with Martha Cooper </span>
 								<br><a href="#"><img src="images/arrow.png" alt="#"></a>
 							</div>
-							<div class="col-lg-6 img_blog"><a href="#"><img src="images/layer11.png" alt="#"></a></div>
-							<div class="col-lg-6 img_blog"><a href="#"><img src="images/layer12.png" alt="#"></a></div>
-							<div class="col-lg-6 span_blog">
+							<div class="col-lg-6 col-sm-6 img_blog"><a href="#"><img src="images/layer11.png" alt="#"></a></div>
+							<div class="col-lg-6 col-sm-6 img_blog"><a href="#"><img src="images/layer12.png" alt="#"></a></div>
+							<div class="col-lg-6 col-sm-6 span_blog">
 								<span>Puma x BWGH August Releases </span>
 								<br><a href="#"><img src="images/arrow.png" alt="#"></a>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6 img_blog"><img src="images/layer10.png" alt="#"></div>
+					<div class="col-lg-6 col-sm-12 img_blog"><img src="images/layer10.png" alt="#"></div>
 				</div>
 			
 			</div>
 
-			<div class="btn_blog">
-				<button class="btn_slider">READ MORE</button>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="btn_blog">
+							<button class="btn_slider">READ MORE</button>
+						</div>
+					</div>
+				</div>
 			</div>
+
 	</section>
 
 </main>
@@ -257,12 +278,12 @@
 	<div class="brand_logos">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-2"><a href="#"><img src="images/adidas_logo.png" alt="#"></a></div>
-				<div class="col-lg-2"><a href="#"><img src="images/nb_logo.png" alt="#"></a></div>
-				<div class="col-lg-2"><a href="#"><img src="images/nike_logo.png" alt="#"></a></div>
-				<div class="col-lg-2"><a href="#"><img src="images/puma_logo.png" alt="#"></a></div>
-				<div class="col-lg-2"><a href="#"><img src="images/new_era_logo.png" alt="#"></a></div>
-				<div class="col-lg-2"><a href="#"><img src="images/asics_logo.png" alt="#"></a></div>
+				<div class="col-lg-2 col-sm-4 col-6 brand"><a href="#"><img src="images/adidas_logo.png" alt="#"></a></div>
+				<div class="col-lg-2 col-sm-4 col-6 brand"><a href="#"><img src="images/nb_logo.png" alt="#"></a></div>
+				<div class="col-lg-2 col-sm-4 col-6 brand"><a href="#"><img src="images/nike_logo.png" alt="#"></a></div>
+				<div class="col-lg-2 col-sm-4 col-6 brand"><a href="#"><img src="images/puma_logo.png" alt="#"></a></div>
+				<div class="col-lg-2 col-sm-4 col-6 brand"><a href="#"><img src="images/new_era_logo.png" alt="#"></a></div>
+				<div class="col-lg-2 col-sm-4 col-6 brand"><a href="#"><img src="images/asics_logo.png" alt="#"></a></div>
 			</div>
 		</div>
 	</div>
@@ -270,7 +291,7 @@
 	<div class="footer_menu">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-5 links">
+				<div class="col-lg-5 col-md-12 links">
 					<nav class="footer_menu_links">
 						<a href="#">Online Store</a>
 						<a href="#">How to Order</a>
@@ -279,8 +300,8 @@
 						<a href="#">Contact </a>
 					</nav>
 				</div>
-				<div class="col-lg-2"><a href="#"><img src="images/logo.png" alt="#"></a></div>
-				<div class="col-lg-5 links">
+				<div class="col-lg-2 col-md-12 footer_logo"><a href="#"><img src="images/logo.png" alt="#"></a></div>
+				<div class="col-lg-5 col-md-12 links">
 					<nav class="footer_menu_links">
 						<a href="#">Shipping Policy</a>
 						<a href="#">Terms</a>
