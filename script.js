@@ -13,3 +13,10 @@ $(document).ready(function(){
   	pauseOnFocus:true
   });
 });
+
+$(document).ready(function(){
+  $('.header_burger').click(function(event) {
+    $('.header_burger').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+});

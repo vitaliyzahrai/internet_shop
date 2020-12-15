@@ -12,131 +12,197 @@
 		.logo{
 			position: absolute;
 	    z-index: 2;
-	    width: 190px;
-	   	height: 136px;
 	    background-color: #ff6600;
 			img{
 				width: 100%;
 			}
 		}
 	}
+
+	.header_burger{
+			display: none;
+			position: absolute;
+			width: 30px;
+			height: 20px;
+			left: 90%;
+			top: 35%;
+			float: right;
+			z-index: 3;
+			cursor: pointer;
+			&:before,&:after{
+				content:'';
+				background-color:#ff6600;
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				left: 0;
+				transition: all 0.4s ease 0s;
+			}
+			span{
+				background-color: #ff6600;
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				left: 0;
+				top: 9px;
+				transition: all 0.4s ease 0s;
+			}
+		}
+		.header_burger:before{
+			top: 0;
+		}
+		.header_burger:after{
+			bottom: 0;
+		}
+
+		.active:before{
+			 transform: rotate(45deg);
+			 top: 9px;
+		}	
+		.active:after{
+			 transform: rotate(-45deg);
+			 bottom: 9px;
+		}
+		.active{
+			span{
+				transform: scale(0);
+			}
+		}
+
 	.top_bar{
 		background-color: #101010;
-		padding: 17px 0px 18px 25px;
-		span{
-			font-size: 10px;
-			color: #858585;
-			text-transform: uppercase;
-		}
-		.top_bn{
-			padding: 0;
+		padding: 10px 0px 10px 25px;
+		.top_sp{
+			span{
+				font-size: 10px;
+				color: #858585;
+				text-transform: uppercase;
+			}
 			nav{
 				float: right;
-				a{
-					font-size: 10px;
-					color: #858585;
-					padding: 0px 12px 0px 12px;
-					text-transform: uppercase;
-					text-decoration: none;
-					&:hover{
+				padding-right: 40px;
+				ul{
+					padding: 0;
+					margin: 0;
+					li{
+						display: inline-block;
+						a{
+							font-size: 10px;
+							color: #858585;
+							padding: 0px 6px 0px 6px;
+							text-transform: uppercase;
+							text-decoration: none;
+							&:hover{
 								transition: .3s;
 								color: #dedede;
 								border-bottom: 2px solid #dedede;
 							}
+						}
+					}
 				}
 			}
 		}
 	}
+
 	.main_bar{
 		background-color: #ffffff;
-		.main_nav{
-			margin: 30px 0px 22px 0px;
-				a{
-				font-size: 17px;
-				font-weight: 700;
-				text-decoration: none;
-				color: #070707;
-				padding: 32px 25px 10px 25px;
-				cursor: pointer;
-				&:hover{
-							transition: .3s;
-							color: #ff6600;
-							border-bottom: 3px solid #ff6600;
-						}
-				&:active{
-					color: #070707;
-				}		
-			}
-		}
-		.main_search{
-			margin-top: 24px;
-			.search_box{
-				position: absolute;
-				right: 15%;
-				background: #ff6600;
-				border-radius: 40px;
-				padding: 5px;
-				height: 40px;
-				&:hover >.search_txt{
-					width: 150px;
+			.main_nav{
+				margin: 22px 0px 22px 0px;
+				ul{
 					padding: 0;
-				}
-				&:hover >.search_btn{
-					background: #fff;
-					color: #ff6600;
-				}
-				.search_txt{
-					border: none;
-					background: none;
-					outline: none;
-					padding: 0;
-					color: #fff;
-					font-size: 15px;
-					transition: 0.4s;
-					line-height: 30px;
-					width: 0px;
-					transition: 0.4s;
-				}
-				.search_btn{
-					float: right;
-					height: 30px;
-					width: 30px;
-					border-radius: 50%;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					text-decoration: none;
-					color: #4c4c4c;
-					cursor: pointer;
-					&:active{
-							color: #ff6600;
-						}			
-				}
-			}	
-			.basket_btn{
-				position: absolute;
-		    height: 39px;
-		    width: 39px;
-		    left: 87%;
-		    display: flex;
-		    top: 1px;
-		    justify-content: center;
-		    align-items: center;
-		    border-radius: 50%;
-		    background: #ff6600;
-		    text-decoration: none;
-				color: #4c4c4c;
-				cursor: pointer;
-				&:hover{
-						transition: .3s;
-						color: #fff;
-					}
-				&:active{
+					margin: 0;
+					li{
+						display: inline-block;
+						a{
+						font-size: 17px;
+						font-weight: 700;
+						text-decoration: none;
 						color: #070707;
-					}			
+						padding: 0 25px 0 25px;
+						cursor: pointer;
+						&:hover{
+								transition: .3s;
+								color: #ff6600;
+								border-bottom: 3px solid #ff6600;
+							}
+						&:active{
+							color: #070707;
+						}		
+					}
+				}
+				.main_search{
+					float: right;
+					.search_box{
+						position: absolute;
+						top: 14px;
+						right: 90px;
+						background: #ff6600;
+						border-radius: 40px;
+						padding: 5px;
+						height: 40px;
+						&:hover >.search_txt{
+							width: 120px;
+							padding: 0;
+						}
+						&:hover >.search_btn{
+							background: #fff;
+							color: #ff6600;
+						}
+						.search_txt{
+							border: none;
+							background: none;
+							outline: none;
+							padding: 0;
+							color: #fff;
+							font-size: 15px;
+							transition: 0.4s;
+							line-height: 30px;
+							width: 0px;
+							transition: 0.4s;
+						}
+						.search_btn{
+							float: right;
+							height: 30px;
+							width: 30px;
+							border-radius: 50%;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							text-decoration: none;
+							color: #4c4c4c;
+							cursor: pointer;
+							&:active{
+									color: #ff6600;
+								}			
+						}
+					}		
+					.basket_btn{
+						position: absolute;
+					  height: 39px;
+					  width: 39px;
+					  top: 14px;
+					  right: 40px;
+				    display: flex;
+				    justify-content: center;
+					  align-items: center;
+				    border-radius: 50%;
+				    background: #ff6600;
+				    text-decoration: none;
+						color: #4c4c4c;
+						cursor: pointer;
+						&:hover{
+								transition: .3s;
+								color: #fff;
+							}
+						&:active{
+								color: #070707;
+							}			
+					}
+				}
 			}
 		}
 	}
+	
 }
 
 .head_slider{
@@ -462,7 +528,26 @@ footer{
 	}
 }
 
-
+@media screen and (max-width: 1125px){
+	.navigation{
+		.top_bar{
+			.top_sp{
+				padding: 0;
+			}
+		}
+		.main_bar{
+			.main_nav{
+				ul{
+					li{
+						a{
+							padding: 0 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 @media screen and (max-width: 1000px){
 	footer{
@@ -480,6 +565,13 @@ footer{
 }
 
 @media screen and (max-width: 991px){
+	
+	.navigation{
+		.header_burger{
+			display: block;
+		}
+	}
+	
 	footer{
 		.footer_menu{
 			.links{
