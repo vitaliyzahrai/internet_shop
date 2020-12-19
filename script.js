@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('.header_burger').click(function(event) {
-    $('.header_burger').toggleClass('active');
+    $('.header_burger,.main_nav').toggleClass('active');
     $('body').toggleClass('lock');
   });
 });
