@@ -4,7 +4,7 @@
 
 
 .navigation{
-	// display: none;
+	display: none;
 		position: fixed;
     z-index: 3;
     width: 100%;
@@ -235,13 +235,15 @@
 					}
 			  }
 			  h1{
-			  	padding-top: 100px;
+			  	padding-top: 20px;
 			  	font-size: 80px;
 					font-weight: 700;
+					margin: 0;
 			  }
 			  p{
 			  	font-size: 20px;
-			  	padding-bottom: 50px;
+			  	padding: 10px 0 35px 0;
+			  	margin: 0;
 			  }
 			  .btn_slider{
 			  	padding: 15px 30px;
@@ -359,12 +361,15 @@ main{
 					line-height: 1;
 				}
 			}
-			img{
-				float: right;
-				padding: 32px 0px 35px 0px;
+			.column_promo_1_img{
+				img{
+					float: right;
+					margin: 20px auto;
+				}
 			}
 			nav{
-				margin: 350px 0px 0px 40px;
+				position: absolute;
+				margin: 330px 0px 0px 40px;
 				a{
 					font-size: 12px;
 					font-weight: 400;
@@ -387,13 +392,20 @@ main{
 			padding-left: 0px;
 			background-color: #d4d4d4;
 			.column_promo_1_head{
+				p{
+					padding-right: 240px;
+				}
 				&:before{
 					left: 50%;
 					width: 51%;
     		}
 			}
-			img{
-				padding: 110px 0px 40px 0px;
+			.column_promo_2_img{
+				float: right;
+				margin: 90px 0 15px 0;
+				img{
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -565,6 +577,29 @@ footer{
 
 
 
+@media screen and (max-width: 1199px){
+	main{
+		.column_promo{
+			.column_promo_1,.column_promo_2{
+				.column_promo_1_head{
+					margin-top: 56px;
+					p{
+						padding-right: 150px;
+    				padding-bottom: 110px;
+    				font-size: 44px;
+					}
+				}
+			}
+			.column_promo_2{
+				.column_promo_1_head{
+					p{
+						padding-right: 180px;
+					}
+				}
+			}
+		}
+	}
+}
 
 
 @media screen and (max-width: 1125px){
@@ -581,9 +616,39 @@ footer{
 			}
 		}
 	}
+	.head_slider{
+		.head_slider_sl{
+			.sl_slide{
+				.carousel-caption{
+					h1{
+						font-size: 70px;
+					}
+					p{
+						font-size: 18px;
+						padding-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 1000px){
+	.head_slider{
+		.head_slider_sl{
+			.sl_slide{
+				.carousel-caption{
+					h1{
+						font-size: 60px;
+					}
+					p{
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+
 	footer{
 		.footer_menu{
 			.links{
@@ -638,6 +703,35 @@ footer{
 	// 		}
 	// 	}
 	// }
+
+	main{
+		.column_promo{
+			.column_promo_1,.column_promo_2{
+				margin: 0 auto;
+				.column_promo_1_head{
+					p{
+    				font-size: 42px;
+					}
+				}
+				.column_promo_1_img{
+					img{
+						margin: 15px auto;
+					}
+				}
+			}
+			.column_promo_2{
+				.column_promo_1_head{
+					p{
+						padding-right: 175px;
+					}
+				}
+				nav{
+						margin-top: 325px;
+					}
+			}
+		}
+	}
+
 	
 	footer{
 		.brand_logos{
@@ -668,9 +762,60 @@ footer{
 }
 
 
+@media screen and (max-width: 767px){
+	main{
+		padding-bottom: 45px;
+		.column_promo{
+			top: 0;
+			.column_promo_1,.column_promo_2{
+				.column_promo_1_head{
+					p{
+    				font-size: 46px;
+    				padding-right: 180px;
+					}
+				}
+			}
+			.column_promo_2{
+				.column_promo_1_head{
+					p{
+						padding-right: 210px;
+					}
+				}
+				.column_promo_2_img{
+					margin-top: 96px;
+				}
+				nav{
+					margin-top: 330px;
+				}
+			}
+		}
+		.blog{
+			.btn_blog{
+				margin-top: 45px;
+			}
+		}
+	}		
+}
+
 
 @media screen and (max-width: 575px){
 	main{
+		.column_promo{
+			.column_promo_1,.column_promo_2{
+				.column_promo_1_head{
+					p{
+						padding-right: 200px;
+					}
+				}
+			}
+			.column_promo_2{
+				.column_promo_1_head{
+					p{
+						padding-right: 230px;
+					}
+				}
+			}
+		}
 
 		.blog{
 			.img_blog{
@@ -711,6 +856,55 @@ footer{
 	}
 }
 
+
+
+@media screen and (max-width: 530px){
+	main{
+		.column_promo{
+			.column_promo_1,.column_promo_2{
+				.column_promo_1_head{
+					p{
+						font-size: 38px;
+					}
+				}
+				nav{
+					margin-top: 320px;
+				}
+			}
+			.column_promo_2{
+				.column_promo_1_head{
+					p{
+						padding-right: 222px;
+					}
+				}
+			}
+		}
+	}			
+}
+
+
+@media screen and (max-width: 500px){
+	main{
+		.column_promo{
+			.column_promo_1,.column_promo_2{
+				.column_promo_1_head{
+					p{
+						padding-right: 170px;
+					}
+				}
+			}
+			.column_promo_2{
+				.column_promo_1_head{
+					p{
+						padding-right: 195px;
+					}
+				}
+			}
+		}
+	}			
+}
+
+
 @media screen and (max-width: 474px){
 	footer{
 		.footer_menu{
@@ -723,7 +917,70 @@ footer{
 }
 
 
+@media screen and (max-width: 440px){
+	main{
+		.column_promo{
+			.column_promo_1,.column_promo_2{
+				.column_promo_1_head{
+					p{
+						padding-right: 140px;
+					}
+				}
+				.column_promo_1_img{
+					img{
+						margin: 8px 0;
+					}
+				}
+			}
+			.column_promo_2{
+				.column_promo_1_head{
+					p{
+						padding-right: 164px;
+					}
+				}
+				.column_promo_2_img{
+					margin-bottom: 8px;
+				}
+			}
+		}
+	}			
+}
+
+
 @media screen and (max-width: 425px){
+
+	main{
+		.column_promo{
+			.column_promo_1,.column_promo_2{
+				.column_promo_1_head{
+					p{
+						padding-right: 120px;
+					}
+				}
+			}
+			.column_promo_2{
+				.column_promo_1_head{
+					p{
+						padding-right: 144px;
+					}
+				}
+			}
+		}
+
+		.blog{
+			.head_blog{
+				margin: 30px 0;
+				h1{
+					font-size: 42px;
+				}
+				span{
+					font-size: 18px;
+				}
+			}
+		}
+
+	}	
+
 	footer{
 		.brand_logos{
 			.brand{
@@ -733,3 +990,80 @@ footer{
 	}
 
 }
+
+
+@media screen and (max-width: 375px){
+
+	main{
+		.column_promo{
+			.column_promo_1,.column_promo_2{
+				.column_promo_1_head{
+					p{
+						padding-right: 85px;
+					}
+				}
+				nav{
+					margin-top: 310px;
+				}
+			}
+			.column_promo_2{
+				.column_promo_1_head{
+					p{
+						padding-right: 105px;
+					}
+				}
+				.column_promo_2_img{
+					margin-top: 140px;
+				}
+			}
+		}
+	}
+
+}	
+
+
+@media screen and (max-width: 320px){
+
+	main{
+		.column_promo{
+			.column_promo_1,.column_promo_2{
+				.column_promo_1_head{
+					margin-top: 45px;
+					p{
+						padding-right: 35px;
+					}
+				}
+				.column_promo_1_img{
+					img{
+						margin: 4px 0;
+					}
+				}
+				nav{
+					margin-top: 310px;
+				}
+			}
+			.column_promo_2{
+				.column_promo_1_head{
+					p{
+						padding-right: 55px;
+					}
+				}
+				.column_promo_2_img{
+					margin-bottom: 4px;
+				}
+			}
+		}
+	}
+
+	.blog{
+		.head_blog{
+			h1{
+				font-size: 38px;
+			}
+			span{
+				font-size: 16px;
+			}			
+		}
+	}	
+
+}	
