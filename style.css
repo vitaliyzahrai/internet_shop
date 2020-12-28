@@ -347,7 +347,6 @@ main .column_promo .column_promo_1 .column_promo_1_head, main .column_promo .col
 main .column_promo .column_promo_1 .column_promo_1_head:before, main .column_promo .column_promo_2 .column_promo_1_head:before {
   content: "";
   position: absolute;
-  top: -2px;
   left: 30%;
   width: 71%;
   border-top: 5px solid #ffffff;
@@ -403,12 +402,9 @@ main .column_promo .column_promo_2 .column_promo_1_head:before {
   left: 50%;
   width: 51%;
 }
-main .column_promo .column_promo_2 .column_promo_2_img {
-  float: right;
-  margin: 90px 0 15px 0;
-}
 main .column_promo .column_promo_2 .column_promo_2_img img {
-  width: 100%;
+  margin: 90px 0 15px 0;
+  float: right;
 }
 main .blog .head_blog {
   margin: 40px auto;
@@ -606,20 +602,26 @@ footer .footer_bootom span {
   }
 }
 @media screen and (max-width: 991px) {
-  main .column_promo .column_promo_1, main .column_promo .column_promo_2 {
-    margin: 0 auto;
+  main .column_promo .column_promo_1 .column_promo_1_head, main .column_promo .column_promo_2 .column_promo_1_head {
+    margin-top: 35px;
   }
   main .column_promo .column_promo_1 .column_promo_1_head p, main .column_promo .column_promo_2 .column_promo_1_head p {
-    font-size: 42px;
+    font-size: 30px;
+    padding: 0 110px 75px 0;
   }
   main .column_promo .column_promo_1 .column_promo_1_img img, main .column_promo .column_promo_2 .column_promo_1_img img {
-    margin: 15px auto;
+    margin: 7px auto;
+    width: 50%;
+  }
+  main .column_promo .column_promo_1 nav, main .column_promo .column_promo_2 nav {
+    margin-top: 225px;
   }
   main .column_promo .column_promo_2 .column_promo_1_head p {
-    padding-right: 175px;
+    padding-right: 130px;
   }
-  main .column_promo .column_promo_2 nav {
-    margin-top: 325px;
+  main .column_promo .column_promo_2 .column_promo_2_img img {
+    width: 70%;
+    margin-top: 85px;
   }
 
   footer .brand_logos .brand:nth-child(1) {
@@ -646,17 +648,21 @@ footer .footer_bootom span {
     top: 0;
   }
   main .column_promo .column_promo_1 .column_promo_1_head p, main .column_promo .column_promo_2 .column_promo_1_head p {
-    font-size: 46px;
+    font-size: 44px;
     padding-right: 180px;
   }
+  main .column_promo .column_promo_1 .column_promo_1_img img, main .column_promo .column_promo_2 .column_promo_1_img img {
+    width: 42%;
+  }
+  main .column_promo .column_promo_1 nav, main .column_promo .column_promo_2 nav {
+    margin-top: 275px;
+  }
   main .column_promo .column_promo_2 .column_promo_1_head p {
-    padding-right: 210px;
+    padding-right: 208px;
   }
-  main .column_promo .column_promo_2 .column_promo_2_img {
-    margin-top: 96px;
-  }
-  main .column_promo .column_promo_2 nav {
-    margin-top: 330px;
+  main .column_promo .column_promo_2 .column_promo_2_img img {
+    margin-top: 75px;
+    width: 65%;
   }
   main .blog .btn_blog {
     margin-top: 45px;
@@ -664,10 +670,20 @@ footer .footer_bootom span {
 }
 @media screen and (max-width: 575px) {
   main .column_promo .column_promo_1 .column_promo_1_head p, main .column_promo .column_promo_2 .column_promo_1_head p {
-    padding-right: 200px;
+    padding-right: 230px;
+    padding-bottom: 70px;
+  }
+  main .column_promo .column_promo_1 .column_promo_1_img img, main .column_promo .column_promo_2 .column_promo_1_img img {
+    width: 39%;
+  }
+  main .column_promo .column_promo_1 nav, main .column_promo .column_promo_2 nav {
+    margin-top: 270px;
   }
   main .column_promo .column_promo_2 .column_promo_1_head p {
-    padding-right: 230px;
+    padding-right: 255px;
+  }
+  main .column_promo .column_promo_2 .column_promo_2_img img {
+    margin-top: 58px;
   }
   main .blog .img_blog {
     -webkit-box-ordinal-group: 1;
@@ -704,23 +720,59 @@ footer .footer_bootom span {
     padding-bottom: 0;
   }
 }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 549px) {
   main .column_promo .column_promo_1 .column_promo_1_head p, main .column_promo .column_promo_2 .column_promo_1_head p {
-    font-size: 38px;
+    font-size: 40px;
   }
   main .column_promo .column_promo_1 nav, main .column_promo .column_promo_2 nav {
-    margin-top: 320px;
+    margin-top: 255px;
   }
-  main .column_promo .column_promo_2 .column_promo_1_head p {
-    padding-right: 222px;
+  main .column_promo .column_promo_2 .column_promo_2_img img {
+    margin-top: 52px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 515px) {
   main .column_promo .column_promo_1 .column_promo_1_head p, main .column_promo .column_promo_2 .column_promo_1_head p {
-    padding-right: 170px;
+    font-size: 35px;
+  }
+  main .column_promo .column_promo_1 nav, main .column_promo .column_promo_2 nav {
+    margin-top: 238px;
+  }
+  main .column_promo .column_promo_2 .column_promo_2_img img {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 485px) {
+  main .column_promo .column_promo_1 .column_promo_1_head p, main .column_promo .column_promo_2 .column_promo_1_head p {
+    padding-bottom: 55px;
+    padding-right: 200px;
+  }
+  main .column_promo .column_promo_1 nav, main .column_promo .column_promo_2 nav {
+    margin-top: 222px;
   }
   main .column_promo .column_promo_2 .column_promo_1_head p {
-    padding-right: 195px;
+    padding-right: 220px;
+  }
+  main .column_promo .column_promo_2 .column_promo_2_img img {
+    margin-top: 45px;
+  }
+}
+@media screen and (max-width: 460px) {
+  main .column_promo .column_promo_1 .column_promo_1_head, main .column_promo .column_promo_2 .column_promo_1_head {
+    margin-top: 30px;
+  }
+  main .column_promo .column_promo_1 .column_promo_1_head p, main .column_promo .column_promo_2 .column_promo_1_head p {
+    font-size: 30px;
+    padding-right: 180px;
+  }
+  main .column_promo .column_promo_1 nav, main .column_promo .column_promo_2 nav {
+    margin-top: 205px;
+  }
+  main .column_promo .column_promo_2 .column_promo_1_head p {
+    padding-right: 200px;
+  }
+  main .column_promo .column_promo_2 .column_promo_2_img img {
+    margin-top: 45px;
   }
 }
 @media screen and (max-width: 474px) {
@@ -728,26 +780,15 @@ footer .footer_bootom span {
     line-height: 2.5;
   }
 }
-@media screen and (max-width: 440px) {
-  main .column_promo .column_promo_1 .column_promo_1_head p, main .column_promo .column_promo_2 .column_promo_1_head p {
-    padding-right: 140px;
-  }
-  main .column_promo .column_promo_1 .column_promo_1_img img, main .column_promo .column_promo_2 .column_promo_1_img img {
-    margin: 8px 0;
-  }
-  main .column_promo .column_promo_2 .column_promo_1_head p {
-    padding-right: 164px;
-  }
-  main .column_promo .column_promo_2 .column_promo_2_img {
-    margin-bottom: 8px;
-  }
-}
 @media screen and (max-width: 425px) {
   main .column_promo .column_promo_1 .column_promo_1_head p, main .column_promo .column_promo_2 .column_promo_1_head p {
-    padding-right: 120px;
+    font-size: 26px;
   }
-  main .column_promo .column_promo_2 .column_promo_1_head p {
-    padding-right: 144px;
+  main .column_promo .column_promo_1 nav, main .column_promo .column_promo_2 nav {
+    margin-top: 190px;
+  }
+  main .column_promo .column_promo_2 .column_promo_2_img img {
+    margin-top: 40px;
   }
   main .blog .head_blog {
     margin: 30px 0;
@@ -763,38 +804,61 @@ footer .footer_bootom span {
     padding: 30px 0px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   main .column_promo .column_promo_1 .column_promo_1_head p, main .column_promo .column_promo_2 .column_promo_1_head p {
-    padding-right: 85px;
+    font-size: 24px;
   }
   main .column_promo .column_promo_1 nav, main .column_promo .column_promo_2 nav {
-    margin-top: 310px;
+    margin-top: 180px;
+  }
+  main .column_promo .column_promo_2 .column_promo_2_img img {
+    margin-top: 35px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main .column_promo .column_promo_1 .column_promo_1_head p, main .column_promo .column_promo_2 .column_promo_1_head p {
+    font-size: 22px;
+    padding-right: 170px;
+    padding-bottom: 40px;
+  }
+  main .column_promo .column_promo_1 .column_promo_1_img img, main .column_promo .column_promo_2 .column_promo_1_img img {
+    width: 36%;
+  }
+  main .column_promo .column_promo_1 nav, main .column_promo .column_promo_2 nav {
+    margin-top: 160px;
+  }
+  main .column_promo .column_promo_2 .column_promo_2_img img {
+    width: 60%;
   }
   main .column_promo .column_promo_2 .column_promo_1_head p {
-    padding-right: 105px;
-  }
-  main .column_promo .column_promo_2 .column_promo_2_img {
-    margin-top: 140px;
+    padding-right: 180px;
   }
 }
 @media screen and (max-width: 320px) {
   main .column_promo .column_promo_1 .column_promo_1_head, main .column_promo .column_promo_2 .column_promo_1_head {
-    margin-top: 45px;
+    margin-top: 18px;
+    border-right: solid 3px #ffffff;
+    border-bottom: solid 3px #ffffff;
+  }
+  main .column_promo .column_promo_1 .column_promo_1_head:before, main .column_promo .column_promo_2 .column_promo_1_head:before {
+    border-top: 3px solid #ffffff;
+  }
+  main .column_promo .column_promo_1 .column_promo_1_head:after, main .column_promo .column_promo_2 .column_promo_1_head:after {
+    border-left: 3px solid #ffffff;
   }
   main .column_promo .column_promo_1 .column_promo_1_head p, main .column_promo .column_promo_2 .column_promo_1_head p {
-    padding-right: 35px;
-  }
-  main .column_promo .column_promo_1 .column_promo_1_img img, main .column_promo .column_promo_2 .column_promo_1_img img {
-    margin: 4px 0;
+    font-size: 19px;
+    padding-right: 140px;
+    padding-bottom: 45px;
   }
   main .column_promo .column_promo_1 nav, main .column_promo .column_promo_2 nav {
-    margin-top: 310px;
+    margin-top: 140px;
   }
   main .column_promo .column_promo_2 .column_promo_1_head p {
-    padding-right: 55px;
+    padding-right: 150px;
   }
-  main .column_promo .column_promo_2 .column_promo_2_img {
-    margin-bottom: 4px;
+  main .column_promo .column_promo_2 .column_promo_2_img img {
+    margin-bottom: 10px;
   }
 
   .blog .head_blog h1 {
