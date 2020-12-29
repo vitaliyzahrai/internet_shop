@@ -161,6 +161,7 @@
 
 .head_slider{
 	.head_slider_sl{
+		padding-top: 112px;
 		padding-right: 0px;
 		padding-left: 0px;
 		.sl_slide{
@@ -615,11 +616,11 @@ footer{
 
 @media screen and (max-width: 991px){
 	
-	body{
-		.lock{
-			overflow: hidden;
-		}
+	
+	.lock{
+		overflow: hidden;
 	}
+	
 	.navigation{
 	
 		.header_burger{
@@ -627,7 +628,7 @@ footer{
 			position: absolute;
 			width: 30px;
 			height: 20px;
-			left: 90%;
+			left: 85%;
 			top: 55%;
 			float: right;
 			z-index: 3;
@@ -678,19 +679,21 @@ footer{
 				padding: 0;
 				position: absolute;
 				width: 50%;
-				height: 300px;
-				top: 112px;
+				height: 350px;
+				top: 113px;
 				right: 0;
 				text-align: center;
 				padding-top: 10px;
 				right: -100%;
 				transition: all 0.8s ease;
+				overflow: auto;
 				.menu_item_top_span{
 					font-size: 13px;
 					color: #fff;
 				}
 				.header_menu_top_ul{
 					float: none;
+					padding-top: 20px;
 					li{
 						display: block;
 						margin: 10px 0;
@@ -716,14 +719,14 @@ footer{
 				padding: 0;
 				position: absolute;
 				width: 50%;
-				height: 300px;
+				height: 350px;
 				top: 69px;
 				left: 0;
 				text-align: center;
-				padding-top: 60px;
 				margin: 0;
 				left: -100%;
 				transition: all 0.8s ease;
+				overflow: auto;
 				.header_menu_bottom_ul{
 					li{
 						display: block;
@@ -739,11 +742,16 @@ footer{
 					}
 					.menu_item_search{
 						.search_box{
-							right: 52%;
+							position: initial;
+							width: 80%;
+							margin: 10px auto;
+							&:hover >.search_txt{
+								width: 65%;
+							}
 						}
 						.basket_btn{
-							right: 39%;
-							top: 16px;
+							position: initial;
+							margin: 10px auto;
 						}
 					}
 				}
