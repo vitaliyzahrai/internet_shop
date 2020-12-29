@@ -173,9 +173,8 @@
 			.carousel-caption {
 				left: 5%;
 				right: 5%;
-			  top: 16%;
+			  top: 10%;
 			  padding: 0;
-			  margin-top: 30px;
 			  img{
 					margin: auto;
 					&:hover{
@@ -184,7 +183,7 @@
 					}
 			  }
 			  h1{
-			  	padding-top: 20px;
+			  	padding-top: 70px;
 			  	font-size: 80px;
 					font-weight: 700;
 					margin: 0;
@@ -195,6 +194,7 @@
 			  	margin: 0;
 			  }
 			  .btn_slider{
+			  	margin-top: 70px;
 			  	padding: 15px 30px;
 			  	font-size: 12px;
 			  	font-weight: 700;
@@ -230,7 +230,7 @@
 				content: '';
 			}
 			.slick-dots{
-				bottom: 80px;
+				bottom: 11%;
 				li{
 					button{
 						border: 1px solid #000;
@@ -525,6 +525,23 @@ footer{
 
 
 @media screen and (max-width: 1199px){
+
+	.head_slider{
+		.head_slider_sl{
+			.sl_slide{
+				.carousel-caption{
+					h1{
+						padding-top: 50px;
+					}
+					.btn_slider{
+						margin-top: 50px;
+					}
+				}
+			}
+		}
+	}
+
+
 	main{
 		.column_promo{
 			.column_promo_1,.column_promo_2{
@@ -567,7 +584,6 @@ footer{
 		.head_slider_sl{
 			.sl_slide{
 				.carousel-caption{
-					margin-top: 35px;
 					h1{
 						font-size: 68px;
 					}
@@ -828,8 +844,59 @@ footer{
 		
 }
 
+@media screen and (max-width: 900px){
+
+	.head_slider{
+		.head_slider_sl{
+			.sl_slide{
+				.carousel-caption{
+					top: 5%;
+					h1{
+						font-size: 46px;
+					}
+					p{
+						font-size: 12px;
+					}
+					.btn_slider{
+						margin-top: 20px;
+						padding: 8px 15px;
+						font-size: 10px;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
 
 @media screen and (max-width: 767px){
+
+	.head_slider{
+		.head_slider_sl{
+			.sl_slide{
+				.carousel-caption{
+					h1{
+						font-size: 40px;
+						padding-top: 20px;
+					}
+					p{
+						font-size: 10px;
+					}
+					.btn_slider{
+						margin-top: 30px;
+						padding: 6px 12px;
+						font-size: 10px;
+					}
+				}
+				.slick-dots{
+					bottom: 5%;
+				}
+			}
+		}
+	}
+
 	main{
 		padding-bottom: 45px;
 		.column_promo{
@@ -870,6 +937,37 @@ footer{
 			}
 		}
 	}		
+
+}
+
+
+@media screen and (max-width: 600px){
+
+	.head_slider{
+		.head_slider_sl{
+			.sl_slide{
+				.carousel-caption{
+					img{
+						width: 20%;
+					}
+					h1{
+						font-size: 35px;
+						padding-top: 15px;
+					}
+					p{
+						font-size: 10px;
+						padding-bottom: 15px;
+					}
+					.btn_slider{
+						margin-top: 15px;
+						padding: 5px 10px;
+						font-size: 8px;
+					}
+				}
+			}
+		}
+	}
+
 }
 
 
@@ -973,6 +1071,54 @@ footer{
 
 
 @media screen and (max-width: 515px){
+
+	.navigation{
+		.logo{
+			img{
+				width: 70%;
+			}
+		}
+		.header_burger{
+			top: 55%;
+		}
+
+		.header_top{
+			height: 30px;
+			.header_menu_top_nav{
+				top: 79px;
+			}
+		}
+
+		.header_bottom{
+			height: 49px;
+			.header_menu_bottom_nav{
+				top: 49px;
+			}
+		}
+
+	}
+
+
+	.head_slider{
+		.head_slider_sl{
+			padding-top: 79px;
+			.sl_slide{
+				.carousel-caption{
+					h1{
+						font-size: 30px;
+						padding-top: 15px;
+					}
+					p{
+						padding-bottom: 10px;
+					}
+					.btn_slider{
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+	}
+
 	main{
 		.column_promo{
 			.column_promo_1,.column_promo_2{
@@ -1061,6 +1207,26 @@ footer{
 
 
 @media screen and (max-width: 474px){
+
+	.head_slider{
+		.head_slider_sl{
+			.sl_slide{
+				.carousel-caption{
+					h1{
+						font-size: 25px;
+						padding-top: 10px;
+					}
+					p{
+						font-size: 8px;
+					}
+					.btn_slider{
+						font-size: 6px;
+					}
+				}
+			}
+		}
+	}
+
 	footer{
 		.footer_menu{
 			.links{
@@ -1073,6 +1239,35 @@ footer{
 
 
 @media screen and (max-width: 425px){
+
+	.head_slider{
+		.head_slider_sl{
+			.sl_slide{
+				.carousel-caption{
+					h1{
+						font-size: 22px;
+						padding-top: 8px;
+					}
+					.btn_slider{
+						font-size: 5px;
+						margin-top: 0;
+					}
+				}
+				.slick-prev{
+					left: 8px;
+					border-bottom: 3px solid #ff6600 ;
+					height: 5px;
+					width: 20px;
+				}
+				.slick-next{
+					right: 8px;
+					border-bottom: 3px solid #ff6600 ;
+					height: 5px;
+					width: 20px;
+				}
+			}
+		}
+	}
 
 	main{
 		.column_promo{
